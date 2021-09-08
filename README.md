@@ -53,3 +53,6 @@
     ReactDOM.render(<App /> ,document.getElementById('potato'));
     ```
 3. 다시 원래대로 돌려넣기
+### 3. 리액트 기초 개념 알아보기
+#### JSX
+- JSX는 HTML과 자바스크립트 조합
