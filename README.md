@@ -1,12 +1,7 @@
 # 김용준 201840208
-
- [1-1. 1주차](#[09월08일]) </br>
- [1-2. 2주차]([09월15일]) </br>
- [1-3. 3주차](#[09월29일]) </br>
- [1-5. 5주차](#[10월06일]) </br>
-## [10월06일]
+## [10월 06일]
 > 학습 내용
-* 클래스형 컴포넌트의 일생 알아보기
+* constructor()함수  
 ```js
   constructor(props){
     super(props)
@@ -15,9 +10,19 @@
 
     console.log('render');
 ```
+* componentDidMount()함수
+```js
+  (생략...)
+  componentDidMount(){
+    console.log('component rendered');
+  }
 
-
-## [09월29일]
+  render(){
+    console.log("I'm rendering"); 
+  }
+  (생략...)
+```
+## [09월 29일]
 > 학습내용
 * map()함수로 만든 컴포먼트에 key props 추가하기
 ```js
@@ -102,7 +107,7 @@ class App extends React.Component {
 ```
 * add()함수와 minus() 함수 작성
 
-## [09월15일]
+## [09월 15일]
 > 학습내용
 #### props
 ```
@@ -117,7 +122,7 @@ class App extends React.Component {
 f12를 통해 개발자 도구를 통해 console탭으로 이동하여 사용가능
 ```
 
-## [09월08일]
+## [09월 08일]
 > 학습내용
 ### 2.리액트로 클론 코딩 시작하기
 #### 슈퍼 빠른 create-react-app
