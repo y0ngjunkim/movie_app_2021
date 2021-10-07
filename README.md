@@ -22,9 +22,46 @@
   }
   (생략...)
 ```
+* componentDidUpdate()함수
+```js
+  (생략...)
+  componentDidMount(){
+    console.log('component rendered');
+  }
+
+  componentDidUpdate(){
+    console.log('I just updated');
+  }
+  (생략...)
+```
+
+#### 영화 앱 만들기 워밍업
+* App 컴포넌트 비우기
+* 영화 데이터 로밍 상태 표시
+```js
+  // 로딩 중 표현
+  state = {
+    isLoading: true,
+  };  
+  render(){
+      const { isLoading } = this.state;
+      return <div>{isLoading ? 'Loading...' : 'We are ready'}</div>;
+    }
+  }
+```
+* 로딩 현상 구현
+```js
+  componentDidMount(){ // 첫 번째 인자로 setTimeout(...)을 전달
+    setTimeout(() => { 
+      this.setState({ isLoading: false }); // state를 바꾸려면 setState() 함수 사용
+    }, 6000); // 두 번째 인자로 6000밀리초 전달
+  }  
+```
+* 영화 데이터 저장
+
 ## [09월 29일]
 > 학습내용
-* map()함수로 만든 컴포먼트에 key props 추가하기
+* map()함수로 만든 컴포먼트에 key props 추가
 ```js
 const foodLike = [
   {

@@ -1,36 +1,18 @@
 import React from 'react';
 
 class App extends React.Component {
-  constructor(props){
-    super(props)
-    console.log('hello');
-    }
-  
   state = {
-    count: 0,
+    isLoading: true,
   };
-
-  add = () => {
-    console.log('add');
-  };
-  minus = () => {
-    console.log('minus');
-  };
-
   componentDidMount(){
-    console.log('component rendered');
-  }
-
+    setTimeout(() => {
+      this.setState({ isLoading: false });
+    }, 6000);
+  }  
   render(){
-    console.log("I'm rendering");
-    return( 
-      <div>
-        <h1>The number is: {this.state.count}</h1>
-        <button>Add</button>
-        <button>Minus</button>
-      </div>
-    );
+      const { isLoading } = this.state;
+      return <div>{isLoading ? 'Loading...' : 'We are ready'}</div>;
+    }
   }
-}
 
 export default App;
