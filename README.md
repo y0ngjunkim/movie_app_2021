@@ -59,6 +59,50 @@
 ```
 * 영화 데이터 저장
 
+### 6. 영화 앱 만들기
+#### 영화 API 사용하기
+* axios 설치
+```
+> npm install axios
+```
+```
+2. YTS 영화 데이터 API 살펴보기
+3. 영화 목록 데이터 확인해보기
+4. JSON Viewer 확장 도구 설치하기
+5. JSON 형식 데이터 출력
+6. 노마드 코더 영화 API를 사용
+7. yts-proxy.now.sh/list_movies.json 입력
+8. 영화 정보 더 자세히 살펴보기
+9. 영화 정보를 더 자세히 보기 위해 조건 추가
+10. movie_id가 10인 영화 살펴보기
+11. 노마드 코더 영화 API를 영화 앱에서 호출
+12. axios의 동작 확인해 보기
+13. getMovies() 함수를 기다린 다음, axios.get() 함수가 반환한 데이터 잡기
+14. getMovies()에 async 붙이고, axios.get()에 await 붙이기
+```
+#### 영화 데이터 화면에 그리기
+```
+1. console.log()함수로 영화 데이터 출력해 보기
+2. 영화 데이터 자세히 살펴보기
+3. movies 배열 펼쳐보기
+4. 객체에 있는 movies 키에 접근하기
+5. 객체에 있는 movies 키에 조금 더 똑똑하게 접근하기
+6. movies state에 영화 데이터 저장
+7. 코드 축약
+8. isLoading state true에서 false로 업데이트하기
+```
+#### Movie 컴포넌트 만들기
+```
+1. Movie 컴포넌트 만들기
+2. 영화 데이터 다시 살펴보기
+3. Movie.propTypes 작성하기
+4. year,title,summary,poster를 각각 Movie.propTypes에 추가
+5. yts-proxy.now.sh/list_movies.json에 접속한 다음 키와 키값을 자세히 살펴본다.
+6. yts.It.api#list_movies에 접속한 다음 Encoding Paramerters에 목 sort_by라는 Parameter를 본다.
+7. Parameter와 Parameter에 넘겨줄 값을 = 으로 이어서 작성하면 되는 거를 확인
+8. .json주소에 접속해 평점을 확인
+9. axios.get()에 json주소 값을 입력
+```
 ## [09월 29일]
 > 학습내용
 * map()함수로 만든 컴포먼트에 key props 추가
