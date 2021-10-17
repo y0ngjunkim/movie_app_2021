@@ -1,4 +1,69 @@
 # 김용준 201840208
+## [10월 13일]
+> 학습 내용
+* Movie 컴포넌트 만들기
+```js
+10. Movie 컴포넌트에 props 추가하고 출력해 보기
+function Movie({ id, year, title, summary, poster }) {
+  return <h4>{title}</h4>;
+}
+11. App 컴포넌트에서 Movie 컴포넌트 그리기
+12. map() 함수에 컴포넌트를 반환하는 함수 전달하기
+(생략...)
+movie.map((movie)=> {
+  console.log(movie);
+  return;
+})
+13. Movie 컴포넌트 반환하도록 movies.map() 수정하기
+  import Movie from "./Movie";
+```
+```js
+14. Movie 컴포넌트에 props 전달하기
+  id={movie.id}
+  year={movie.year}
+  title={movie.title}
+  summary={movie.summary}
+  poster={movie.medium_cover_image}
+15. [Console]탭에서 영화 데이터 확인해 보기
+16. key props 추가하기
+  key={movie.id}
+```
+* 영화 앱 스타일링하기 - 기초
+```js
+1. App 컴포넌트에 HTML 추가하기
+  <section className="container">
+        {isLoading ? (
+          <div className="loader">
+            <span className="loader-class">Loading...</span>
+          </div>
+        ) : (
+          <div className="movies">
+            { (생략...)
+```
+```js
+2. Movie 컴포넌트에 HTML 추가하기
+  <div className="movie-data">
+    <h3 className="movie-title">{title}</h3>
+    <h5 className="movie-year">{year}</h5>
+    <p className="movie-summary">{summary}</p>
+  </div>
+3. 영화 포스터 이미지 추가하기
+  <div className="movie">
+    <img src={poster} alt={title} title={title} />
+  </div>  
+4. Movie 컴포넌트 정리하기
+  id: PropTypes.number.isRequired, <<- 삭제
+5. style 속성으로 title 스타일링하기
+  style=backgroundColor: 'red'
+6. CSS 파일 생성하기
+7. App, Movie 컴포넌트에 CSS 파일 임포트하기
+  import "./App.css";
+8. App.css 파일 작성하기
+  body{
+    background-color:#2f2f2f
+  }
+```
+
 ## [10월 06일]
 > 학습 내용
 * constructor()함수  
