@@ -1,4 +1,126 @@
 # 김용준 201840208
+## [10월 27일]
+> 학습 내용
+### 7. 영화 앱 다듬기
+* 영화 앱 전체 모습 수정하기
+```js
+1. App.css 내용 모두 지우기
+2. 노마드 코더 영화 API에서 장르 키 살펴보기
+3. Movie 컴포넌트에 genres props 넘겨주기
+    genres: PropTypes.arrayOf(PropTypes.string).isRequired
+4. App 컴포넌트 수정하기
+    genres={movie.genres}
+5. class 속성 이름 className으로 바꿔주기
+6. 영화 장르 출력하기
+    <ul className="movie-genres">
+      {genres.map(genre => {
+      return <li>{genre}</li>;
+      })}
+    </ul>
+7. li엘리먼트에 key props 추가하기
+      {genres.map((genre, index) => {
+        return (
+          <li key={index} className="movie__genre">
+            {genre}
+          </li>
+        );
+      })}
+```
+* 영화 앱 멋지게 스타일링하기
+```js
+1. App.css 파일 수정하기
+2. Movie.css 파일 수정하기
+3. 시놉시스 180자 제한하기
+    {summary.slice(0,180)}
+4. 영화 앱 제목 살펴보기
+5. 영화 앱 제목 바꾸기
+    <title>Movie App</title>
+```
+### 8. 영화 앱에 여러 기능 추가하기
+* react-router-dom 설치하고 프로젝트 폴더 정리
+```js
+1. react-router-dom 설치
+> npm install react-router-dom
+2. components 폴더에 Movie 컴포넌트 옮기기
+3. routes 폴더에 라우터가 보여줄 화면 만들기
+4. Home.js 수정하기
+5. Home.css 만들기
+6. App.js 수정하기
+import React from "axios";
+import Home from "./routes/Home'";
+import "./App.css";
+
+function App(){
+  return <Home />;
+}
+
+export default App;
+```
+* 라우터 만들기
+```js
+1. HashRouter와 Route 컴포넌트 사용하기
+import { HashRouter, Route } from 'react-router-dom';
+
+function App(){
+  return (
+    <HashRouter>
+      <Route />
+    </HashRouter>
+  );
+}
+2. Route 컴포넌트에 path, component props 추가하기
+import About from './routes/About';
+<Route path="/about" component={About} />
+3. About.js 수정하기
+import React from "react";
+
+function About(){
+    return <span>About this page: I built it because I Love movies.</span>
+}
+export default About;
+4. 라우터 테스트해보기
+5. Home 컴포넌트를 위한 Route 컴포넌트 추가하기
+import Home from './routes/Home';
+<Route path="/" component={Home} />
+6. 라우터 테스트하고 문제 찾아보기
+7. 라우터 자세히 살펴보기
+  <Route path="/home">
+    <h1>Home</h1>
+  </Route>
+  <Route path="/home/introduction">
+    <h1>Introduction</h1>
+  </Route>
+  <Route path="/about">
+    <h1>About</h1>
+  </Route>
+8. 라우터 다시 테스트해 보기
+9. App.js 다시 원래대로 돌리기
+  <Route path = "/" component={Home} />
+  <Route path = "/about" component={About} />
+10. Route 컴포넌트에 exact props 추가해보기
+  exact={true}
+11. About.css 작성하기
+```
+* 네비게이션 만들어 보기
+```js
+1. Navigation 컴포넌트 만들기
+import React from "react";
+
+function Navigation(){
+    return (
+        <div>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+        </div>
+    );
+}
+
+export default Navigation;
+2. Navigation 컴포넌트 App 컴포넌트에 포함시키기
+import Navigation from "./components/Navigation";
+
+<Navigation />
+```
 ## [10월 13일]
 > 학습 내용
 * Movie 컴포넌트 만들기
