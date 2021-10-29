@@ -120,6 +120,14 @@ export default Navigation;
 import Navigation from "./components/Navigation";
 
 <Navigation />
+3. Home 링크 눌러 보기
+4. a 엘리먼트 Link 컴포넌트로 바꾸기
+import {Link} from 'react-router-dom'
+
+  <Link to="/">Home</Link>
+  <Link to="/about">About</Link>
+5. Navigation 컴포넌트 위치 다시 확인하기
+6. Navigation 컴포넌트 스타일링하기
 ```
 ## [10월 13일]
 > 학습 내용
