@@ -1,4 +1,40 @@
 # 김용준 201840208
+## [11월 03일]
+> 학습 내용
+* 영화 상세 정보 기능 만들어보기
+```js
+1. route props 살펴보기
+function About(props) {
+    console.log(props);
+    ...
+2. route props에 데이터 담아 보내기
+<Link to={{pathname:'/about', state:{frameElement:true}}}>About</Link>
+3. route props 다시 살펴보기
+4. Navigation 컴포넌트 정리하기
+<Link to="/about">About</Link>
+5. Movie 컴포넌트에 Link 컴포넌트 추가하기
+  <Link
+    to={{
+      pathname:'/movie-detail',
+      state:{year,title,summary,poster,genres},
+    }}
+  >
+6. Detail 컴포넌트 만들기
+import React from "react";
+
+function Detail(props){
+    console.log(props);
+    return <span>hello</span>;
+}
+
+export default Detail;
+7. Route 컴포넌트 추가하기
+  import Detail from "./routes/Details";  
+  <Route path = "/movie-detail" component={Detail} />
+8. 영화 카드를 눌러 /movie-detail로 이동한 다음 영화 데이터 확인하기
+9. /movie-detail로 바로 이동하기
+```
+
 ## [10월 27일]
 > 학습 내용
 ### 7. 영화 앱 다듬기
