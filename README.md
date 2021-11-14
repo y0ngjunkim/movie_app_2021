@@ -1,4 +1,52 @@
 # 김용준 201840208
+## [11월 10일]
+> 학습 내용
+* 리다이렉트 기능 만들어보기
+```js
+1. history키 살펴 보기
+2. Detail 컴포넌트 클래스형 컴포넌트로 변경
+class Detail extends React.Component{
+    componentDidMount(){
+        const{ location, history } = this.props;
+    }
+
+    render(){
+        return <span>hello</span>;
+    }
+}
+3. push() 함수 사용하기
+  if(location.state === undefined){
+    history.push("/");
+  }
+4. 리다이렉트 기능 확인해 보기
+5. 영화 제목 출력하기
+  const { location } = this.props;
+  return <span>{location.state.title}</span>;
+6. /movie-detail로 바로 이동하기
+7. location.state 확인하기
+  if(location.state){
+      return <span>{location.state.title}</span>;
+  }else{
+     return null;
+  }
+```
+* 영화 앱 깃허브에 배포하기
+```
+1. package.json 파일 수정
+  - http://본인계정.github.io/저장소 이름
+2. scripts 키값으로 명령어를 추가
+3. 최종 코드 깃허브에 업로드하기
+  - git add .
+  - git commit -m "완성된 코드"
+  - git push origin master
+4. gh-pages 설치하기
+  - npm install gh-pages
+5. 깃허브 저장소 확인하기
+  - git remote -v
+6. 영화 앱 깃허브에 배포하기
+  - npm run depoly
+7. Github Pages에 접속하여 영화 앱 확인하기
+```
 ## [11월 03일]
 > 학습 내용
 * 영화 상세 정보 기능 만들어보기
