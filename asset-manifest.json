@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/y0ngjunkim/movie_app_2021/static/css/main.b154bcff.chunk.css",
-    "main.js": "/y0ngjunkim/movie_app_2021/static/js/main.cf8df5f9.chunk.js",
-    "main.js.map": "/y0ngjunkim/movie_app_2021/static/js/main.cf8df5f9.chunk.js.map",
-    "runtime-main.js": "/y0ngjunkim/movie_app_2021/static/js/runtime-main.4f47f87d.js",
-    "runtime-main.js.map": "/y0ngjunkim/movie_app_2021/static/js/runtime-main.4f47f87d.js.map",
-    "static/js/2.8fddcf80.chunk.js": "/y0ngjunkim/movie_app_2021/static/js/2.8fddcf80.chunk.js",
-    "static/js/2.8fddcf80.chunk.js.map": "/y0ngjunkim/movie_app_2021/static/js/2.8fddcf80.chunk.js.map",
-    "index.html": "/y0ngjunkim/movie_app_2021/index.html",
-    "static/css/main.b154bcff.chunk.css.map": "/y0ngjunkim/movie_app_2021/static/css/main.b154bcff.chunk.css.map",
-    "static/js/2.8fddcf80.chunk.js.LICENSE.txt": "/y0ngjunkim/movie_app_2021/static/js/2.8fddcf80.chunk.js.LICENSE.txt"
+    "main.css": "/movie_app_2021/static/css/main.b154bcff.chunk.css",
+    "main.js": "/movie_app_2021/static/js/main.cf8df5f9.chunk.js",
+    "main.js.map": "/movie_app_2021/static/js/main.cf8df5f9.chunk.js.map",
+    "runtime-main.js": "/movie_app_2021/static/js/runtime-main.74f5e28d.js",
+    "runtime-main.js.map": "/movie_app_2021/static/js/runtime-main.74f5e28d.js.map",
+    "static/js/2.a9f0e9a9.chunk.js": "/movie_app_2021/static/js/2.a9f0e9a9.chunk.js",
+    "static/js/2.a9f0e9a9.chunk.js.map": "/movie_app_2021/static/js/2.a9f0e9a9.chunk.js.map",
+    "index.html": "/movie_app_2021/index.html",
+    "static/css/main.b154bcff.chunk.css.map": "/movie_app_2021/static/css/main.b154bcff.chunk.css.map",
+    "static/js/2.a9f0e9a9.chunk.js.LICENSE.txt": "/movie_app_2021/static/js/2.a9f0e9a9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.4f47f87d.js",
-    "static/js/2.8fddcf80.chunk.js",
+    "static/js/runtime-main.74f5e28d.js",
+    "static/js/2.a9f0e9a9.chunk.js",
     "static/css/main.b154bcff.chunk.css",
     "static/js/main.cf8df5f9.chunk.js"
   ]
