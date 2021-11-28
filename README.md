@@ -1,4 +1,38 @@
 # 김용준 201840208
+## [11월 24일]
+> 학습 내용
+* 영화 앱 깃허브에 배포하기
+```js
+1. package.json 파일 수정하기
+2. package.json에 scripts 키값으로 명령어를 추가 한다.
+3. 최종 코드 깃허브에 업로드 하기
+4. gh-page 설치하기
+5. 깃허브 저장소 다시 확인하기
+6. 영화 앱 깃허브에 배포하기
+7. Github Pager에 접속하여 영화 앱 확인하기
+```
+* React의 특징
+```js
+* 상호작용이 많은 UI개발에 적합하다.
+* 컴포넌트 로직은 JavaScript로 작성한다.
+* 캡슐화된 컴포넌트로 개발되어 재사용이 용이하다.
+* DOM과는 별개로 상태를 관리할 수 있다.
+* 기술 스택의 나머지 부분에는 관여하지 않는다.
+* 기존 코드와 별개로 개발이 가능하다.
+* React Native를 이용하면 모바일 앱도 만들 수 있다.
+```
+* creat-react-app으로, Remarkable 사용하기
+```js
+1. creat-react-app으로 markdown-editor 프로젝트를 생성한다.
+2. 정상 동작을 확인하다.
+3. App.js에 있는 필요없는 코드를 삭제한다.
+4. App.js에 문서의 코드를 복사해 넣는다.
+5. component의 이름을 App으로 수정한다.
+6. rendering은 index.js에 위임한다.
+7. Remarkable을 설치한다.
+8. React와 Remarkable을 import한다.
+9. 동작이 되는지 확인한다.
+```
 ## [11월 17일]
 > 학습 내용
 ```html
