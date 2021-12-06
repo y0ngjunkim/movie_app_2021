@@ -1,4 +1,64 @@
 # 김용준 201840208
+## [12월 1일]
+> 수업 내용
+* Components와 Props
+```js
+1. 함수 컴포넌트와 클래스 컴포넌트
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+2. 컴포넌트 렌더링
+  <Welcome name="Sara" /> 엘리먼트로 ReactDOM.render()를 호출합니다.
+  React는 {name: 'Sara'}를 props로 하여 Welcome 컴포넌트를 호출합니다.
+  Welcome 컴포넌트는 결과적으로 <h1>Hello, Sara</h1> 엘리먼트를 반환합니다.
+  React DOM은 <h1>Hello, Sara</h1> 엘리먼트와 일치하도록 DOM을 효율적으로 업데이트합니다.
+```
+```js
+3. 컴포넌트 합성
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
+function App() {
+  return (
+    <div>
+      <Welcome name="Sara" />
+      <Welcome name="Cahal" />
+      <Welcome name="Edite" />
+    </div>
+  );
+}
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+);
+```
+```js
+4. 컴포넌트 추출
+function Comment(props) {
+  return (
+    <div className="Comment">
+      <div className="UserInfo">
+        <img className="Avatar"
+          src={props.author.avatarUrl}
+          alt={props.author.name}
+        />
+        <div className="UserInfo-name">
+          {props.author.name}
+        </div>
+      </div>
+      <div className="Comment-text">
+        {props.text}
+      </div>
+      <div className="Comment-date">
+        {formatDate(props.date)}
+      </div>
+    </div>
+  );
+}
+```
+
 ## [11월 24일]
 > 학습 내용
 * 영화 앱 깃허브에 배포하기
